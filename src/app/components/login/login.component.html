@@ -1,0 +1,39 @@
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <form *ngIf="!account" action="" method="POST" (ngSubmit)="onLogin()" [formGroup]="formLogin">
+                    <legend>
+                        <h2>Login</h2>
+                    </legend>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" formControlName="email" id="email" placeholder="Fill ...">
+                        <div *ngIf="submited && f.email.errors">
+                            <small *ngIf="f.email.errors.required">Email không được để trống</small>
+                            <small *ngIf="f.email.errors.email">Email sai định dạng</small>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pass">Password</label>
+                        <input type="password" formControlName="password" id="pass">
+                        <div *ngIf="submited && f.password.errors">
+                            <small *ngIf="f.password.errors.required">bạn phải nhập mật khẩu</small>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <button type="submit" class="btn btn-success">Login</button>
+                    </div>
+                </form>
+
+                <div class="alert alert-danger" *ngIf="account">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <strong>Title!</strong> Bạn đang đăng nhập vui lòng thoát tài khoản ...
+                    <button (click)="onLogOut()" class="btn btn-success">Logout</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>

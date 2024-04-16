@@ -1,0 +1,151 @@
+.header_top {
+    background: #FAF1DD;
+}
+
+.header_top p {
+    padding-top: 5px;
+    margin-bottom: 0!important;
+}
+
+.header_top a {
+    color: #303030;
+}
+
+.header_top span {
+    text-decoration: underline;
+}
+
+.header_top .icon-1,
+.header_top .icon-2,
+.header_top .icon-3 {
+    padding: 5px 0;
+}
+
+.header_top .icon-1 a {
+    padding: 17px 20px 7px 20px;
+    background-image: linear-gradient(to left, transparent, transparent 50%, rgb(84, 84, 250) 50%, rgb(84, 84, 250));
+    background-size: 205% 100%;
+    background-position: 100% 0;
+}
+
+.header_top .icon-2 a {
+    padding: 17px 20px 7px 20px;
+    background-image: linear-gradient(to left, transparent, transparent 50%, violet 50%, violet);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+}
+
+.header_top .icon-3 a {
+    padding: 17px 20px 7px 20px;
+    background-image: linear-gradient(to left, transparent, transparent 50%, aqua 50%, aqua);
+    background-size: 205% 100%;
+    background-position: 100% 0;
+}
+
+.header_top .icon-1 a:hover,
+.header_top .icon-2 a:hover,
+.header_top .icon-3 a:hover {
+    background-position: 0 0;
+    transition: 0.4s all ease-in-out;
+    color: #fff;
+}
+
+.header_top .log_in_button a {
+    padding: 5px;
+    display: block;
+    text-decoration: none;
+}
+
+.header_top .log_in_button a:hover {
+    color: #fff;
+}
+
+.nav-item:hover .category {
+    display: block;
+}
+
+.nav-item ul {
+    list-style: none;
+    display: none;
+}
+
+.nav-item:hover ul {
+    display: block;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+    margin-top: 10px;
+}
+
+.dropdown-menu::after {
+    position: absolute;
+    content: "";
+    top: -15px;
+    height: 15px;
+    width: 100%;
+}
+
+.dropdown-menu::before {
+    height: 0px;
+    width: 0px;
+    top: -8px;
+    content: " ";
+    left: 20%;
+    margin-left: -5px;
+    position: absolute;
+    border-width: 20px 8px;
+    border-style: none solid solid;
+    border-color: transparent transparent;
+    border-image: initial;
+    border-top: none;
+    border-bottom: 8px solid rgb(255, 255, 255);
+}
+
+.logo a {
+    font-family: monsterat;
+    font-size: 24px;
+}
+
+.nav-item .cart {
+    font-size: 20px;
+    padding: 5px 10px;
+    display: block;
+    border-left: 1px solid #fff;
+}
+
+.nav-item .cart a {
+    color: #FAF1DD;
+}
+
+.nav-item .cart span {
+    width: 15px;
+    border-radius: 50%;
+    height: 15px;
+    font-size: 10px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    color: #dc3545;
+}
+
+
+/* .navbar .nav-item .nav-link {
+    position: relative;
+} */
+
+
+/* .navbar .nav-item .nav-link::before {
+    position: absolute;
+    bottom: 0px;
+    left: 10%;
+    height: 2px;
+    width: 0;
+    background: red;
+    content: "";
+    transition: all 0.5s linear 0s;
+}
+
+.navbar .nav-item:hover .nav-link::before {
+    width: 80%;
+} */

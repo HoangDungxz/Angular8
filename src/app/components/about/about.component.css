@@ -1,0 +1,248 @@
+.error {
+    color: red;
+}
+
+.error_login {
+    border-color: red;
+}
+
+.hoverred :hover {
+    color: #E21717;
+}
+
+.twenty {
+    font-size: 20px;
+}
+
+.whitesmoke {
+    color: #afafaf;
+}
+
+.searchform {
+    padding: 0;
+}
+
+.red {
+    color: #E21717;
+}
+
+.buttonsearch {
+    border: 1px solid #ced4da;
+    border-radius: 0%;
+    border-left: 0;
+    background-color: whitesmoke;
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
+
+.input-group :focus {
+    outline: 0;
+    box-shadow: none;
+    border-color: #ced4da;
+    ;
+}
+
+.main-imgtop {
+    overflow: hidden;
+}
+
+.main-imgtop img {
+    transition: all .8s;
+}
+
+.main-imgtop img:hover {
+    transform: scale(1.1);
+}
+
+.top-content {
+    letter-spacing: 0.5px;
+    margin: 25px 0px 20px 0;
+}
+
+.process {
+    margin: 18px 0 40px 0;
+}
+
+.owner-content {
+    border-left: 5px solid #E21717;
+    border-bottom: 5px solid #E21717;
+}
+
+.main-imgbot {
+    margin-top: 9px;
+    ;
+}
+
+.line {
+    margin: 0px 0px 30px 0px;
+}
+
+.line hr {
+    margin-top: 0;
+}
+
+.cuscomments form {
+    padding-left: 19%;
+}
+
+.hiddenform {
+    transition: all 0.6s;
+}
+
+.btn-comments {
+    border: none;
+    background: none;
+    float: right;
+}
+
+.btn-comments:focus {
+    outline: 0;
+}
+
+.btn-submit {
+    background: none;
+    padding: 10px 35px 10px 35px;
+    border-radius: 40px;
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-submit:focus {
+    outline: 0;
+}
+
+.btn-submit:hover {
+    color: #E21717;
+    border-color: #E21717;
+    transition: 0.5s ease-in-out;
+}
+
+.aside .col-lg-8 {
+    padding: 0px 15px 0px 0px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.aside .top-content {
+    margin: 40px 0px 0px 0px;
+}
+
+.aside .col-lg-4 {
+    margin-top: 5px;
+}
+
+.aside .row {
+    margin-top: 20px;
+}
+
+.aside ul li {
+    padding: 5px 0px 5px 15px;
+    background: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 40px;
+    margin-bottom: 8px;
+}
+
+.aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+.aside .line {
+    margin: 30px 0px 30px 0px;
+}
+
+.banner {
+    position: relative;
+    padding: 0;
+}
+
+.banner-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid whitesmoke;
+    padding: 40px 80px 40px 80px;
+    background: rgba(0, 0, 0, 0.6);
+    font-family: 'Courier New';
+}
+
+.banner-title h1 {
+    font-size: 350%;
+    font-weight: 800;
+}
+
+.main-content {
+    margin-top: 50px;
+}
+
+
+/* .list-restaurants ul {
+    list-style-image: url('../../../assets/images/placeholder.png');
+} */
+
+@media(min-width:768px) and (max-width: 900px) {
+    .banner-title {
+        padding: 10px 26px 10px 26px;
+    }
+    .banner-title h1 {
+        font-size: 200%;
+        font-weight: 550;
+    }
+    h4 {
+        font-size: 125%;
+    }
+    .aside {
+        display: none;
+    }
+    .btn-submit {
+        padding: 10px 26px 10px 26px;
+    }
+}
+
+@media(max-width:460px) {
+    .banner-title {
+        padding: 6px 14px 6px 14px;
+    }
+    .banner-title h1 {
+        font-size: 130%;
+        font-weight: 550;
+    }
+    .banner-title h4 {
+        font-size: 70%;
+    }
+    .main-content {
+        margin-top: 20px;
+    }
+    .main-content h3 {
+        font-size: 120%;
+    }
+    .process {
+        margin: 0px 0 15px 0;
+        font-size: 90%;
+    }
+    .main .twenty {
+        font-size: 100%;
+    }
+    .main .top-content {
+        margin: 10px 0px 10px 0px;
+    }
+    .aside {
+        display: none;
+    }
+    .main-imgbot {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .main .line {
+        margin-bottom: 20px;
+    }
+    .btn-submit {
+        padding: 6px 20px 6px 20px;
+    }
+    .collapse h4 {
+        font-size: 110%;
+    }
+}

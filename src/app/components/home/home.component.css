@@ -1,0 +1,774 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Monsterat;
+    src: url(../../../assets/font/Montserrat/Montserrat-Black.ttf);
+}
+
+@font-face {
+    font-family: monterat;
+    src: url(../../../assets/font/Montserrat/Montserrat-Italic.ttf);
+}
+
+@font-face {
+    font-family: moterat;
+    src: url(../../../assets/font/Montserrat/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: opensan;
+    src: url(../../../assets/font/Open_Sans/OpenSans-Bold.ttf);
+}
+
+body {
+    background-image: url(../../../assets/images/imgfood/bannerwedfood/baner-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#home-banner .carousel-item {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+    background: #000;
+}
+
+#home-banner .carousel-item img {
+    height: 100%;
+    opacity: 0.6;
+}
+
+.title {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    top: 0;
+    left: 0;
+}
+
+.title h5 {
+    position: absolute;
+    font-size: 60px;
+    color: #fff;
+    top: 20%;
+    left: 22%;
+    animation: tobottom;
+    animation-duration: 3s;
+}
+
+@keyframes tobottom {
+    from {
+        top: 0;
+    }
+    to {
+        top: 20%;
+    }
+}
+
+.title h2 {
+    font-family: monsterat;
+    position: absolute;
+    font-size: 200px;
+    color: transparent;
+    -webkit-text-stroke: 5px rgba(225, 225, 225, 1);
+    top: 25%;
+    left: 9%;
+    animation: toright;
+    animation-duration: 3s;
+}
+
+@keyframes toright {
+    from {
+        left: 0;
+    }
+    to {
+        left: 9%;
+    }
+}
+
+.title p {
+    position: absolute;
+    font-size: 50px;
+    color: #fff;
+    top: 55%;
+    left: 30%;
+    animation: totop;
+    animation-duration: 3s;
+}
+
+@keyframes totop {
+    from {
+        top: 70%;
+    }
+    to {
+        top: 55%;
+    }
+}
+
+.title button {
+    position: absolute;
+    top: 70%;
+    left: 42%;
+    animation: toup;
+    animation-duration: 2s;
+    padding: 20px 50px;
+    border-radius: 50px;
+    border: none;
+}
+
+.title button:hover {
+    background: #000;
+}
+
+.title button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+@keyframes toup {
+    from {
+        top: 90%
+    }
+    to {
+        top: 70%;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .title {
+        animation: up;
+        animation-duration: 1s;
+    }
+    .title h5 {
+        font-size: 50px;
+        top: 20%;
+        left: 22%;
+        animation: none;
+    }
+    .title h2 {
+        font-size: 160px;
+        animation: none;
+    }
+    .title p {
+        font-size: 40px;
+        top: 50%;
+        animation: none;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .title {
+        animation: up;
+        animation-duration: 1s;
+    }
+    .title h5 {
+        font-size: 40px;
+        top: 18%;
+        left: 22%;
+        animation: none;
+    }
+    .title h2 {
+        font-size: 115px;
+        animation: none;
+    }
+    .title p {
+        font-size: 30px;
+        top: 45%;
+        animation: none;
+    }
+    .title button {
+        animation: none;
+        top: 55%;
+        left: 40%;
+    }
+}
+
+@media screen and (max-width: 569px) {
+    .title {
+        animation: up;
+        animation-duration: 1s;
+    }
+    .title h5 {
+        font-size: 30px;
+        top: 10%;
+        left: 16%;
+        animation: none;
+    }
+    .title h2 {
+        font-size: 86px;
+        animation: none;
+        top: 15%;
+    }
+    .title p {
+        font-size: 25px;
+        animation: none;
+        top: 30%;
+        left: 26%;
+    }
+    .title button {
+        animation: none;
+        top: 38%;
+        padding: 10px 20px;
+        font-size: 14px;
+        left: 40%;
+    }
+    .mt-sm-2 {
+        margin-top: 20px;
+    }
+}
+
+#hot-deal .img-1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.infor_1 {
+    width: 100%;
+    height: 460px;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    display: none;
+}
+
+#hot-deal .img-1:hover .infor_1 {
+    display: block;
+}
+
+#hot-deal .img-1:hover img {
+    transform: scale(1.1);
+    transition: 1s all;
+}
+
+.infor_1 .in_top {
+    width: 100%;
+    position: absolute;
+    left: -200px;
+    top: -30px;
+    height: 200px;
+    background: #dc3545;
+    transform: rotateZ(-45deg);
+    z-index: 1;
+    animation: goright;
+    animation-duration: 1s;
+}
+
+@keyframes goright {
+    from {
+        left: -500px;
+    }
+    to {
+        left: -200px;
+    }
+}
+
+.infor_1 .in_top .fa-star {
+    color: #fff;
+    font-size: 40px;
+    margin-left: 245px;
+    margin-top: 30px;
+}
+
+.infor_1 .in_top p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 190px;
+    margin-top: 40px;
+}
+
+.infor_1 .in_right {
+    width: 100px;
+    position: absolute;
+    right: 30px;
+    animation: goleft;
+    animation-duration: 1s;
+}
+
+@keyframes goleft {
+    from {
+        right: -30px;
+    }
+    to {
+        right: 30px;
+    }
+}
+
+.infor_1 .in_right .h-4 {
+    height: 30%px;
+    padding: 40px 0;
+}
+
+.infor_1 .in_right .h-4 {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+.infor_1 .in_right .h-4 p {
+    color: #fff;
+    font-size: 16px;
+}
+
+#hot-deal .img-2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.infor_2 {
+    width: 100%;
+    height: 225px;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    display: none;
+}
+
+#hot-deal .img-2:hover .infor_2 {
+    display: block;
+}
+
+#hot-deal .img-2:hover img {
+    transform: scale(1.1);
+    transition: 1s all;
+}
+
+.infor_2 .col-6 {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.infor_2 .col-6 .h-6 {
+    height: 114px;
+    width: 125px;
+    border: solid #fff 0.01mm;
+    padding-top: 30px;
+}
+
+.infor_2 .col-6 .fa-cart-plus {
+    margin: 90px 20px 0 0;
+}
+
+.infor_2 .sv-1 {
+    animation: sv1;
+    animation-duration: 1s;
+    position: absolute;
+    top: 0;
+    left: 15px;
+}
+
+@keyframes sv1 {
+    from {
+        top: -30px;
+        left: -30px;
+    }
+    to {
+        top: 0;
+        left: 15px;
+    }
+}
+
+.infor_2 .sv-2 {
+    position: absolute;
+    animation: sv2;
+    animation-duration: 1s;
+    top: 112px;
+    left: 15px;
+}
+
+@keyframes sv2 {
+    from {
+        top: 225px;
+        left: -30px;
+    }
+    to {
+        top: 112px;
+        left: 15px;
+    }
+}
+
+.infor_2 .sv-3 {
+    position: absolute;
+    animation: sv3;
+    animation-duration: 1s;
+    top: 0%;
+    left: 49%;
+    border-left: 1px solid #fff;
+    padding-bottom: 70px;
+}
+
+@keyframes sv3 {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 49%;
+    }
+}
+
+#hot-deal .img-3 {
+    position: relative;
+    overflow: hidden;
+}
+
+.infor_3 {
+    width: 100%;
+    height: 225px;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    display: none;
+}
+
+#hot-deal .img-3:hover .infor_3 {
+    display: block;
+}
+
+#hot-deal .img-3:hover img {
+    transform: scale(1.1);
+    transition: 1s all;
+}
+
+.infor_3 .row {
+    width: 100%;
+    margin: 0;
+}
+
+.infor_3 .col-4 {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 90px 0;
+    border-left: 1px solid #fff;
+}
+
+.infor_3 .col-4:first-child {
+    border: none;
+}
+
+.infor_3 .sv-1 {
+    animation: sv-1;
+    animation-duration: 1s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes sv-1 {
+    from {
+        top: 50%;
+    }
+    to {
+        top: 0;
+    }
+}
+
+.infor_3 .sv-2 {
+    animation: sv-2;
+    animation-duration: 1s;
+    position: absolute;
+    top: 0;
+    left: 33%;
+}
+
+@keyframes sv-2 {
+    from {
+        top: -50%;
+    }
+    to {
+        top: 0;
+    }
+}
+
+.infor_3 .sv-3 {
+    animation: sv-3;
+    animation-duration: 1s;
+    position: absolute;
+    top: 0;
+    left: 67%;
+}
+
+@keyframes sv-3 {
+    from {
+        top: 50%;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .dropdown-menu::before {
+        display: none;
+    }
+    .navbar .nav-item .nav-link::before {
+        display: none;
+    }
+    .dropdown-menu {
+        background-color: transparent;
+        border: none;
+        margin-top: -10px !important;
+    }
+    #home-banner .carousel-item {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #home-banner .carousel-item {
+        height: 400px;
+    }
+}
+
+#best-menu {
+    background: #FAF1DD;
+    padding: 20px 0;
+}
+
+#best-menu .best-item {
+    overflow: hidden;
+}
+
+#best-menu .best-item img {
+    width: 100%;
+    height: 250px;
+}
+
+#best-menu .text-center p {
+    font-family: monterat;
+    padding-top: 20px;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+#best-menu .text-center h6 {
+    font-family: Monsterat;
+    text-decoration: none;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+#best-menu .sell-off {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    top: 0;
+    text-align: center;
+    display: none;
+    animation: up;
+    animation-duration: 1s;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#best-healthy .sell-off {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    text-align: center;
+    display: none;
+    animation: up;
+    animation-duration: 1s;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+@keyframes up {
+    from {
+        transform: scale(0.7);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+#best-menu .best-item:hover .sell-off {
+    display: block;
+}
+
+#best-healthy .bst-hlthy-item:hover .sell-off {
+    display: block;
+}
+
+#best-menu .best-item:hover img {
+    transform: scale(1.1);
+    transition: 0.5s all;
+}
+
+#best-healthy .bst-hlthy-item :hover img {
+    transform: scale(1.1);
+    transition: 0.5s all;
+}
+
+#best-menu .sell-off h4 {
+    font-family: monsterat;
+    color: #fff;
+    padding-top: 30px;
+}
+
+#best-healthy .sell-off h4 {
+    font-family: monsterat;
+    color: #fff;
+    padding-top: 30px;
+}
+
+#best-menu .sell-off h5 {
+    color: #fff;
+    font-family: monterat;
+    padding-top: 17px;
+}
+
+#best-healthy .sell-off h5 {
+    color: #fff;
+    font-family: monterat;
+    padding-top: 40px;
+}
+
+#best-menu .sell-off h5 span {
+    text-decoration: line-through;
+}
+
+#best-healthy .sell-off h5 span {
+    text-decoration: line-through;
+}
+
+#best-menu .sell-off p {
+    color: #fff;
+    font-family: moterat;
+    font-size: 20px;
+}
+
+#best-healthy .sell-off p {
+    color: #fff;
+    font-family: moterat;
+    font-size: 20px;
+}
+
+#best-menu .sell-off p span {
+    color: red;
+    font-weight: bold;
+}
+
+#best-healthy .sell-off p span {
+    color: red;
+    font-weight: bold;
+}
+
+#big-party {
+    padding: 90px 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#big-party .text-center p {
+    font-family: moterat;
+    color: lawngreen;
+    font-size: 40px;
+}
+
+#big-party .text-center h5 {
+    font-family: monsterat;
+    color: transparent;
+    font-size: 70px;
+    -webkit-text-stroke: 1px rgb(255, 226, 226);
+}
+
+#big-party .text-center h6 {
+    font-family: monterat;
+    color: yellow;
+    font-size: 30px;
+}
+
+#best-healthy {
+    background: #FAF1DD;
+    padding: 20px 0;
+}
+
+#best-healthy .text-center {
+    padding-top: 50px;
+}
+
+#best-healthy .text-center p {
+    font-family: Monsterat;
+    color: #000;
+    font-size: 20px;
+}
+
+#best-healthy .text-center h6 {
+    font-family: Monterat;
+    color: #000;
+    font-size: 20px;
+}
+
+#best-healthy .bst-hlthy-item {
+    height: 400px;
+}
+
+#best-healthy .bst-hlthy-item img {
+    width: 100%;
+    height: auto;
+}
+
+#best-healthy .bst-hlthy-item h3 {
+    font-family: monsterat;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#best-healthy .bst-hlthy-item h3 span {
+    color: #dc3545;
+}
+
+#proces {
+    background: #dc3545;
+}
+
+#proces .text-center h4 {
+    font-family: monsterat;
+    padding-top: 30px;
+    color: #fff;
+}
+
+#proces .text-center h2 {
+    font-family: monterat;
+    color: #fff;
+    padding: 10px 0;
+}
+
+#proces .text-center p {
+    color: #fff;
+    font-family: moterat;
+    padding-top: 5px;
+}
+
+#proces .text-center h3 {
+    color: #fff;
+    font-size: 20px;
+    font-family: monsterat;
+}
+
+#proces .row {
+    margin-top: 50px;
+}
+
+#proces .step-img {
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+#proces .step-img img:hover {
+    transform: scale(1.1);
+    transition: 0.5s all;
+}
+
+#proces .step-cnt {
+    margin-bottom: 100px;
+}

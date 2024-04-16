@@ -1,0 +1,151 @@
+/* phần footer */
+
+@font-face {
+    font-family: Monsterat;
+    src: url(../../../../assets/font/Montserrat/Montserrat-Black.ttf);
+}
+
+@font-face {
+    font-family: monterat;
+    src: url(../../../../assets/font/Montserrat/Montserrat-Italic.ttf);
+}
+
+@font-face {
+    font-family: moterat;
+    src: url(../../../../assets/font/Montserrat/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: opensan;
+    src: url(../../../../assets/font/Open_Sans/OpenSans-Bold.ttf);
+}
+
+.ft-top a {
+    color: #FAF1DD;
+}
+
+.ft-top .ft-top-left a {
+    padding-bottom: 20px;
+}
+
+.ft-top .ft-top-left a:hover {
+    text-decoration: none;
+    color: #dc3545;
+    transition: 0.4s all ease-in-out;
+}
+
+.ft-top {
+    padding: 5px 0;
+    background-color: #303030;
+    padding-top: 50px;
+}
+
+.ft-top .ft-top-left {
+    line-height: 40px;
+    font-size: 30px;
+    font-family: monsterat;
+}
+
+.ft-tp-right .ft-tp-item {
+    width: 40px;
+    height: 40px;
+    padding: 4px 8px;
+    padding-left: 10px;
+    border-radius: 50%;
+    border: 1px solid #FAF1DD;
+    font-size: 20px;
+}
+
+.ft-tp-right .ft-tp-item:first-child {
+    padding: 4px 0 0 12px;
+}
+
+.ft-tp-right .ft-tp-item:hover {
+    background: #fea117;
+    transition: 0.5s all;
+}
+
+.ft-mdl {
+    background-color: #303030;
+}
+
+.ft-mdl p {
+    font-family: opensan;
+    text-decoration: underline;
+}
+
+.ft-mdl p:hover {
+    color: #fea117;
+    transition: 0.5s all;
+}
+
+.ft-mdl h6:hover {
+    color: #fff;
+}
+
+.ft-mdl a {
+    display: block;
+    color: #adadad;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.ft-mdl a:hover {
+    text-decoration: none;
+    color: #dc3545;
+}
+
+.ft-mdl {
+    color: #FAF1DD;
+    margin: 10px 0;
+}
+
+.ft-mdl p {
+    display: block;
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+.ft-mdl .ft-mdl-cnt {
+    color: #adadad;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.ft-mdl ul li span {
+    margin-left: 2px;
+    position: relative;
+}
+
+.ft-mdl ul li span::before {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 1px;
+    width: 0;
+    background: red;
+    content: "";
+    transition: all 0.5s linear 0s;
+}
+
+.ft-mdl ul li span:hover::before {
+    width: 100%;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.ft-bt {
+    color: #adadad;
+    background-color: 292929;
+}
+
+.paypal {
+    margin: 10px 0;
+}
+
+.visa-img img {
+    width: 100%;
+}
